@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@color/colorBackground"
+        tools:context=".ProfileActivity">
+
+        <ImageView
+            android:id="@+id/img_club"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:paddingHorizontal="12dp"
+            android:text="@string/club_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorFont"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp">
+
+        <TextView
+            android:id="@+id/ground_title"
+            style="@style/about_title"
+            android:text="@string/ground_title" />
+
+        <TextView
+            android:id="@+id/ground_content"
+            style="@style/about_content"
+            android:layout_below="@+id/ground_title"
+            android:text="@string/ground_content" />
+
+        <TextView
+            android:id="@+id/coach_title"
+            style="@style/about_title"
+            android:layout_below="@id/ground_content"
+            android:text="@string/coach_title" />
+
+        <TextView
+            android:id="@+id/coach_content"
+            style="@style/about_content"
+            android:layout_below="@+id/coach_title"
+            android:text="@string/coach_content" />
+
+        <TextView
+            android:id="@+id/about_title"
+            style="@style/about_title"
+            android:layout_below="@id/coach_content"
+            android:text="@string/about_title" />
+
+        <TextView
+            android:id="@+id/about_content"
+            style="@style/about_content"
+            android:layout_below="@+id/about_title"
+            android:text="@string/about_content" />
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
